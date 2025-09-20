@@ -1,0 +1,5 @@
+{
+  "name": "HONG AI Typing",
+  "description": "A modern, sleek typing test application that uses the Gemini API to generate unique typing prompts based on user-selected difficulty and duration. Test your typing speed and accuracy with real-time feedback and detailed results.",
+  "requestFramePermissions": []
+}

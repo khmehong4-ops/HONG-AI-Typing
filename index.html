@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONG AI Typing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background-color: #eef2f5;
+        --text-color: #2c3e50;
+        --secondary-text-color: #7f8c8d;
+        --primary-color: #3498db;
+        --card-bg: #ffffff;
+        --border-color: #bdc3c7;
+        --button-bg: #27ae60;
+        --button-hover-bg: #229954;
+        --button-text-color: #ffffff;
+        --correct-color: #27ae60;
+        --incorrect-color: #c0392b;
+        --incorrect-bg: #fadbd8;
+        --current-bg: #eaf2f8;
+        --untyped-color: #757575;
+        --icon-color: var(--primary-color);
+        --kbd-bg: #eeeeee;
+        --kbd-border: #b4b4b4;
+        --kbd-text: #333333;
+        --spinner-track-color: rgba(0, 0, 0, 0.1);
+        --shadow-color: rgba(0, 0, 0, 0.08);
+      }
+
+      body[data-theme='dark'] {
+        --background-color: #282c34;
+        --text-color: #e0e0e0;
+        --secondary-text-color: #a0a0a0;
+        --primary-color: #61dafb;
+        --card-bg: #3d414a;
+        --border-color: #565c68;
+        --button-bg: #61dafb;
+        --button-hover-bg: #82e3fc;
+        --button-text-color: #282c34;
+        --correct-color: #a5d6a7;
+        --incorrect-color: #ef9a9a;
+        --incorrect-bg: rgba(239, 154, 154, 0.2);
+        --current-bg: rgba(97, 218, 251, 0.1);
+        --untyped-color: #a0a0a0;
+        --icon-color: var(--primary-color);
+        --kbd-bg: #20232a;
+        --kbd-border: #565c68;
+        --kbd-text: var(--text-color);
+        --spinner-track-color: rgba(255, 255, 255, 0.1);
+        --shadow-color: rgba(0, 0, 0, 0.2);
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Roboto Mono', monospace;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      #root {
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

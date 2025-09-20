@@ -1,0 +1,60 @@
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.results-container h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.result-item {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.result-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.result-value.wpm {
+    color: var(--primary-color);
+}
+
+.result-label {
+    font-size: 1rem;
+    color: var(--subtle-text-color);
+}
+
+.restart-button {
+  padding: 0.75rem 2.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.restart-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}

@@ -1,0 +1,39 @@
+:root {
+  --background-color: #282c34;
+  --text-color: #e0e0e0;
+  --subtle-text-color: #a0a0a0;
+  --primary-color: #61dafb;
+  --secondary-color: #3d414a;
+  --correct-color: #a5d6a7;
+  --incorrect-color: #ef9a9a;
+  --current-word-bg: rgba(97, 218, 251, 0.1);
+  --caret-color: #61dafb;
+  --container-bg: #20232a;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+main {
+  background-color: var(--container-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin-top: 2rem;
+    color: var(--subtle-text-color);
+    font-size: 0.9rem;
+}
